@@ -23,19 +23,19 @@
                 <div class="card-body">
                   <div class="form-group">
                     <label >Nama Hewan</label>
-                    <input type="text" class="form-control" placeholder="masukkan judul buku..." name="nama_hewan">
+                    <input type="text" class="form-control" placeholder="Masukkan nama hewan" name="nama_hewan">
                   </div>
                   <div class="form-group">
                     <label >Nama Latin</label>
-                    <input type="text" class="form-control" placeholder="masukkan penerbit buku..." name="nama_latin">
+                    <input type="text" class="form-control" placeholder="Masukkan nama latin hewan" name="nama_latin">
                   </div>
                   <div class="form-group">
                     <label >Habitat</label>
-                    <input type="text" class="form-control" placeholder="masukkan pengarang buku..." name="habitat">
+                    <input type="text" class="form-control" placeholder="Masukkan habitat hewan" name="habitat">
                   </div>
                   <div class="form-group">
                     <label >Status</label>
-                    <input type="text" class="form-control" placeholder="masukkan tahun buku..." name="status">
+                    <input type="text" class="form-control" placeholder="Masukkan status hewan di alam" name="status">
                   </div>
                   <div class="form-group">
                     <label >Jenis Hewan</label>
@@ -48,7 +48,7 @@
                   </div>
                   <div class="form-group">
                     <label >Jumlah di Alam</label>
-                    <input type="text" class="form-control" placeholder="masukkan harga buku..." name="jumlah">
+                    <input type="text" class="form-control" placeholder="Masukkan jumlah hewan di alam" name="jumlah">
                   </div>
                 </div>
                 <!-- /.card-body -->

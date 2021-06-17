@@ -2,13 +2,13 @@
 
 class Jenis extends Controller {
 	public function __construct()
-	{	
+	{
 		if($_SESSION['session_login'] != 'sudah_login') {
 			Flasher::setMessage('Login','Tidak ditemukan.','danger');
 			header('location: '. base_url . '/login');
 			exit;
 		}
-	} 
+	}
 	public function index()
 	{
 		$data['title'] = 'Data Jenis';
@@ -39,9 +39,9 @@ class Jenis extends Controller {
 		$this->view('templates/footer');
 	}
 
-	public function tambah() 
+	public function tambah()
 	{
-		$data['title'] = 'Tambah Jenis';		
+		$data['title'] = 'Tambah Jenis';
 		$this->view('templates/header', $data);
 		$this->view('templates/sidebar', $data);
 		$this->view('jenis/create', $data);
@@ -49,27 +49,27 @@ class Jenis extends Controller {
 	}
 
 	public function simpanJenis()
-	{		
+	{
 		if( $this->model('JenisModel')->tambahJenis($_POST) > 0 ) {
 			Flasher::setMessage('Berhasil','ditambahkan','success');
 			header('location: '. base_url . '/jenis');
-			exit;			
+			exit;
 		}else{
 			Flasher::setMessage('Gagal','ditambahkan','danger');
 			header('location: '. base_url . '/jenis');
-			exit;	
+			exit;
 		}
 	}
 
-	public function updateJenis(){	
+	public function updateJenis(){
 		if( $this->model('JenisModel')->updateDataJenis($_POST) > 0 ) {
-			Flasher::setMessage('Berhasil','diupdate','success');
+			Flasher::setMessage('Berhasil','di ubah','success');
 			header('location: '. base_url . '/jenis');
-			exit;			
+			exit;
 		}else{
-			Flasher::setMessage('Gagal','diupdate','danger');
+			Flasher::setMessage('Gagal','di ubah','danger');
 			header('location: '. base_url . '/jenis');
-			exit;	
+			exit;
 		}
 	}
 
@@ -77,11 +77,11 @@ class Jenis extends Controller {
 		if( $this->model('JenisModel')->deleteJenis($id) > 0 ) {
 			Flasher::setMessage('Berhasil','dihapus','success');
 			header('location: '. base_url . '/jenis');
-			exit;			
+			exit;
 		}else{
 			Flasher::setMessage('Gagal','dihapus','danger');
 			header('location: '. base_url . '/jenis');
-			exit;	
+			exit;
 		}
 	}
 }

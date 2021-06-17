@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Bukita | Login</title>
+  <title>SatwaKu | Login</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -18,20 +18,24 @@
   <link rel="stylesheet" href="<?= base_url; ?>/dist/css/adminlte.min.css">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
 </head>
-<body class="hold-transition login-page">
+<body class="hold-transition login-page" style="background-image: url('dist/img/bg.jpg');
+      background-repeat: repeat-x repeat-y;
+      background-size: 400px;">
 <div class="login-box">
   <div class="login-logo">
-    Satwa<b>KU</b>
+    Satwa<b>Ku</b>
   </div>
   <!-- /.login-logo -->
-  <div class="card">
+  <div class="card ">
     <div class="card-body login-card-body">
+      <img class="profile-img " src="dist/img/logo.jpg" style="width: 70px; height: 70px;display: block; margin-left: auto; margin-right: auto;">
       <p class="login-box-msg">Silahkan login terlebih dahulu.</p>
 
       <form action="<?= base_url; ?>/login/prosesLogin" method="post">
         <div class="input-group mb-3">
-          <input type="text" class="form-control" placeholder="ketikkan username.." name="username">
+          <input type="text" class="form-control" placeholder="Input username" name="username">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-user"></span>
@@ -39,17 +43,17 @@
           </div>
         </div>
         <div class="input-group mb-3">
-          <input type="password" class="form-control" placeholder="ketikkan password.." name="password">
+          <input type="password" class="form-control" placeholder="Input password" name="password">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-lock"></span>
             </div>
           </div>
         </div>
-        <div class="row">
+        <div class="row" >
           <!-- /.col -->
-          <div class="col-4">
-            <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+          <div class="col-4 ">
+            <button type="submit" class="btn btn-primary  " style="width:320px;">LogIn</button>
           </div>
           <!-- /.col -->
         </div>

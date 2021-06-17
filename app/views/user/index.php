@@ -24,10 +24,10 @@
 
       <div class="card">
         <div class="card-header">
-          <h3 class="card-title"><?= $data['title'] ?></h3> <a href="<?= base_url; ?>/user/tambah" class="btn float-right btn-xs btn btn-primary">Tambah User</a>
+          <h3 class="card-title"><?= $data['title'] ?></h3> <a href="<?= base_url; ?>/user/tambah" class="btn float-right btn-xs btn btn-success">Tambah User</a>
         </div>
         <div class="card-body">
-        
+
       <form action="<?= base_url; ?>/user/cari" method="post">
  <div class="row mb-3">
     <div class="col-lg-6">
@@ -43,23 +43,23 @@
 </div>
     </form>
           <table class="table table-bordered">
-                  <thead>                  
+                  <thead class="table-info">
                     <tr>
-                      <th style="width: 10px">#</th>
+                      <th style="width: 10px">No</th>
                       <th>Nama</th>
                       <th>Username</th>
                       <th style="width: 150px">Action</th>
                     </tr>
                   </thead>
                   <tbody>
-                  <?php $no=1; ?> 
+                  <?php $no=1; ?>
                     <?php foreach ($data['user'] as $row) :?>
                     <tr>
                       <td><?= $no; ?></td>
                       <td><?= $row['nama'];?></td>
                       <td><?= $row['username'];?></td>
                       <td>
-                        <a href="<?= base_url; ?>/user/edit/<?= $row['id'] ?>" class="badge badge-info ">Edit</a> <a href="<?= base_url; ?>/user/hapus/<?= $row['id'] ?>" class="badge badge-danger" onclick="return confirm('Hapus data?');">Hapus</a>
+                        <a href="<?= base_url; ?>/user/edit/<?= $row['id'] ?>" class="badge badge-warning ">Ubah</a> <a href="<?= base_url; ?>/user/hapus/<?= $row['id'] ?>" class="badge badge-danger" onclick="return confirm('Hapus data?');">Hapus</a>
                       </td>
                     </tr>
                     <?php $no++; endforeach; ?>
@@ -67,9 +67,9 @@
                 </table>
         </div>
         <!-- /.card-body -->
-        <div class="card-footer">
+        <!-- <div class="card-footer">
           Footer
-        </div>
+        </div> -->
         <!-- /.card-footer-->
       </div>
       <!-- /.card -->
@@ -78,4 +78,3 @@
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
-

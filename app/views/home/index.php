@@ -15,17 +15,17 @@
     <section class="content">
 
       <!-- Default box -->
-      <div class="card">
+      <div class="card card-info">
         <div class="card-header">
-          <h3 class="card-title">Hello</h3>
+          <h3 class="card-title">Home</h3>
         </div>
         <div class="card-body">
-          Selamat datang dihalaman Website Informasi Satwa Dilindungi!
+          Selamat datang di halaman Website Informasi Satwa Dilindungi!
         </div>
         <!-- /.card-body -->
-        <div class="card-footer">
+        <!-- <div class="card-footer">
           Footer
-        </div>
+        </div> -->
         <!-- /.card-footer-->
       </div>
       <!-- /.card -->
@@ -34,4 +34,3 @@
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
-

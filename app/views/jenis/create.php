@@ -23,7 +23,7 @@
                 <div class="card-body">
                   <div class="form-group">
                     <label >Jenis Hewan</label>
-                    <input type="text" class="form-control" placeholder="masukkan kategori..." name="jenis_hewan">
+                    <input type="text" class="form-control" placeholder="Masukkan jenis hewan" name="jenis_hewan">
                   </div>
                 </div>
                 <!-- /.card-body -->
