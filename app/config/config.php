@@ -1,6 +1,6 @@
 <?php
 
-define('base_url', 'http://localhost/uas_pweb_fix2/public');
+define('base_url', 'http://localhost/UAS-PWEB-B/public');
 
 define('DB_HOST', 'localhost');
 define('DB_USER', 'root');
