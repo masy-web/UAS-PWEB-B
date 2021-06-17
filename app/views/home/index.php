@@ -22,11 +22,6 @@
         <div class="card-body">
           Selamat datang di halaman Website Informasi Satwa Dilindungi!
         </div>
-        <!-- /.card-body -->
-        <!-- <div class="card-footer">
-          Footer
-        </div> -->
-        <!-- /.card-footer-->
       </div>
       <!-- /.card -->
 

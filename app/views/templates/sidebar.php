@@ -2,7 +2,6 @@
   <aside class="main-sidebar sidebar-light-primary elevation-4">
     <!-- Brand Logo -->
     <a href="#" class="brand-link">
-      <img class="profile-img " src="dist/img/logo.jpg" style="width: 20px; height: 20px;color: blue; margin-left: auto; margin-right: auto;">
       <span class="brand-text font-weight-primary " >SatwaKu</span>
     </a>
 

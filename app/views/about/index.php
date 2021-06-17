@@ -28,7 +28,7 @@
 
                 <p class="text-muted text-center">Website</p><br>
 
-                <p class="text-muted text-center"><b>Arif Rohman Afandi 192410101087<br>Masyhuri Farhan 192410101098</b><br></p>
+                <p class="text text-center"><b>Arif Rohman Afandi 192410101087<br>Masyhuri Farhan 192410101098</b><br></p>
 
               </div>
         <!-- /.card-body -->

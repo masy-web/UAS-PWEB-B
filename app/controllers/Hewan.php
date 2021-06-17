@@ -27,42 +27,7 @@ class Hewan extends Controller {
 		$this->view('hewan/lihatlaporan', $data);
 	}
 
-	public function laporan()
-	{
-		$data['hewan'] = $this->model('HewanModel')->getAllHewan();
-
-			$pdf = new FPDF('p','mm','A4');
-			// membuat halaman baru
-			$pdf->AddPage();
-			// setting jenis font yang akan digunakan
-			$pdf->SetFont('Arial','B',14);
-			// mencetak string
-			$pdf->Cell(190,7,'LAPORAN HEWAN',0,1,'C');
-
-			// Memberikan space kebawah agar tidak terlalu rapat
-			$pdf->Cell(10,7,'',0,1);
-
-			$pdf->SetFont('Arial','B',10);
-			$pdf->Cell(85,6,'NAMA HEWAN',1);
-			$pdf->Cell(30,6,'NAMA LATIN',1);
-			$pdf->Cell(30,6,'HABITAT',1);
-			$pdf->Cell(15,6,'STATUS',1);
-			$pdf->Cell(25,6,'JENIS',1);
-			  $pdf->Ln();
-			$pdf->SetFont('Arial','',10);
-
-			foreach($data['hewan'] as $row) {
-			    $pdf->Cell(85,6,$row['nama_hewan'],1);
-			    $pdf->Cell(30,6,$row['nama_latin'],1);
-			    $pdf->Cell(30,6,$row['habitat'],1);
-			    $pdf->Cell(15,6,$row['status'],1);
-			    $pdf->Cell(25,6,$row['jenis_hewan'],1);
-			    $pdf->Ln();
-			}
-
-			$pdf->Output('D', 'Laporan Hewan.pdf', true);
-
-	}
+	
 	public function cari()
 	{
 		$data['title'] = 'Data Hewan';

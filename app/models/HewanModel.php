@@ -12,7 +12,7 @@ class HewanModel {
 
 	public function getAllHewan()
 	{
-		$this->db->query("SELECT hewan.*, jenis.jenis_hewan FROM " . $this->table . " JOIN jenis ON jenis.id = hewan.jenis_id");
+		$this->db->query("SELECT hewan.*, jenis.jenis_hewan FROM " . $this->table . " JOIN jenis ON jenis.id = hewan.jenis_id ORDER BY nama_hewan ASC");
 		return $this->db->resultSet();
 	}
 

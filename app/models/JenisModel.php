@@ -12,7 +12,7 @@ class JenisModel {
 
 	public function getAllJenis()
 	{
-		$this->db->query('SELECT * FROM ' . $this->table);
+		$this->db->query('SELECT * FROM ' . $this->table . ' ORDER BY jenis_hewan ASC');
 		return $this->db->resultSet();
 	}
 
