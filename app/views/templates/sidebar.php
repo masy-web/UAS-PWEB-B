@@ -57,7 +57,7 @@
             <a href="<?= base_url; ?>/about" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
               <p>
-                About Me
+                About We
               </p>
             </a>
           </li>
