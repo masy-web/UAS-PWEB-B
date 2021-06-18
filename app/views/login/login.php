@@ -20,18 +20,14 @@
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 
 </head>
-<body class="hold-transition login-page" style="background-image: url('dist/img/bg.jpg');
-      background-repeat: repeat-x repeat-y;
-      background-size: 400px;">
+<body class="hold-transition login-page" style="background-image: url('<?= base_url; ?>/dist/img/bg.jpg');background-repeat: repeat-x repeat-y;background-size: 400px;">
 <div class="login-box">
-  <div class="login-logo">
-    Satwa<b>Ku</b>
-  </div>
+  
   <!-- /.login-logo -->
-  <div class="card ">
-    <div class="card-body login-card-body">
-      <img class="profile-img "> <!-- src="dist/img/logo.jpg" style="width: 70px; height: 70px;display: block; margin-left: auto; margin-right: auto;"> -->
-      <p class="login-box-msg">Silahkan login terlebih dahulu.</p>
+  <div class="card " >
+    <div class="card-body login-card-body" style="border-radius: 50px">
+      <img class="profile-img " src="<?= base_url; ?>/dist/img/logo.jpg" style="width: 70px; height: 70px;display: block; margin-left: auto; margin-right: auto;">
+      <h3 class="login-box-msg"><b>SatwaKu</b></h3>
 
       <form action="<?= base_url; ?>/login/prosesLogin" method="post">
         <div class="input-group mb-3">

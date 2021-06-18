@@ -1,8 +1,9 @@
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-light-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="#" class="brand-link">
-      <span class="brand-text font-weight-primary " >SatwaKu</span>
+    <a href="<?= base_url; ?>/home" class="brand-link">
+      <img class="profile-img " src="<?= base_url; ?>/dist/img/logo.jpg" style="width: 30px; height: 30px; margin-left: auto; margin-right: auto;">
+      <span class="brand-text font-weight-primary " style="font-size: 25px">SatwaKu</span>
     </a>
 
     <!-- Sidebar -->
@@ -10,7 +11,7 @@
       <!-- Sidebar user (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="info">
-          <a href="#" class="d-block" style="color: #007bff;">@uaspwebB</a>
+          <a href="<?= base_url; ?>/home" class="d-block" style="color: #007bff;">@uaspwebB</a>
         </div>
       </div>
 

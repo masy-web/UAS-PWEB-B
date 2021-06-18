@@ -24,6 +24,36 @@ http://www.templatemo.com/tm-484-ocean
           <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
           <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
           <![endif]-->
+<style>
+  .center {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+  .table {
+    margin-right: auto;
+    margin-left: auto;
+    border: solid 1px #DDEEEE;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font: normal 13px Arial, sans-serif;
+    width: 70%;
+}
+.table thead th {
+    background-color: #DDEFEF;
+    border: solid 1px #DDEEEE;
+    color: #336B6B;
+    padding: 10px;
+    text-align: left;
+    text-shadow: 1px 1px 1px #fff;
+}
+.table tbody td {
+    border: solid 1px #DDEEEE;
+    color: #333;
+    padding: 10px;
+    text-shadow: 1px 1px 1px #fff;
+}
+</style>
 </head>
 
     <body>
@@ -35,6 +65,7 @@ http://www.templatemo.com/tm-484-ocean
                 <section class="tm-section-intro">
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
                         <div class="tm-wrapper-center">
+                            <img class="profile-user-img img-fluid img-circle" src="<?= base_url; ?>/dist/img/logo.jpg" style="width: 130px; height: 130px;display: block; margin-left: auto; margin-right: auto;">
                             <h1 class="tm-section-intro-title">SatwaKu</h1>
                             <p class="tm-section-intro-text">Website Informasi Satwa Dilindungi di Indonesia<br>
                             Mari menjaga kelestarian alam dengan melindungi semua Satwa di Indonesia!
@@ -45,7 +76,42 @@ http://www.templatemo.com/tm-484-ocean
                 </section>    
 
             </div>
-
+            <div>
+                
+            </div>
+            <br>
+                <div>
+                    <section class="sheet padding-15mm">
+                        <h3 class="center" style="text-decoration: margin-top: 20px; color: #7DBCDE">Daftar Satwa yang Dilindungi di Indonesia</h3><br>
+                        <table class="table table-bordered">
+                              <thead class="table-info">
+                                <tr>
+                                  <th style="width: 10px">No</th>
+                                  <th>Nama Hewan</th>
+                                  <th>Nama Latin</th>
+                                  <th>Habitat</th>
+                                  <th>Status</th>
+                                  <th>Jenis Hewan</th>
+                                  <th>Jumlah di Alam</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                              <?php $no=1; ?>
+                                <?php foreach ($data['hewan'] as $row) :?>
+                                <tr>
+                                  <td><?= $no; ?></td>
+                                  <td><?= $row['nama_hewan'];?></td>
+                                  <td><?= $row['nama_latin'];?></td>
+                                  <td><?= $row['habitat'];?></td>
+                                  <td><?= $row['status'];?></td>
+                                  <td><div class="badge badge-info"><?= $row['jenis_hewan'];?></div></td>
+                                  <td><?= $row['jumlah'];?></td>
+                                </tr>
+                                <?php $no++; endforeach; ?>
+                              </tbody>
+                        </table>
+                    </section>
+                </div>
             <div class="row" id="tm-section-2">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
 
@@ -64,10 +130,8 @@ http://www.templatemo.com/tm-484-ocean
                                 <div class="carousel-item active">
                                     <div class="carousel-content">
                                         <div>
-                                            <h2 class="tm-carousel-item-title">Lorem ipsum dolor sit amet</h2>
-                                            <p class="tm-carousel-item-text">Praesent ultrices a ante at efficitur. Aliquam eu lacinia nunc. Phasellus lacinia feugiat accumsan.<br>
-                                            Nulla tempor vel est sit amet tincidunt. Nullam eget lectus ut felis aliquam<br>
-                                            laoreet eget eu dui. Curabitur in imperdiet lorem.</p>
+                                            <h2 class="tm-carousel-item-title">Cagar Alam</h2>
+                                            <p class="tm-carousel-item-text">Menurut Undang-undang Nomor 5 Tahun 1990 tentang Konservasi Sumber Daya Alam Hayati dan Ekosistemnya, Cagar Alam adalah kawasan suaka alam karena keadaan alamnya mempunyai kekhasan tumbuhan, satwa, dan ekosistemnya atau ekosistem tertentu yang perlu dilindungi dan perkembangannya berlangsung secara alami.</p>
                                         </div>
                                     </div>                               
                                 </div>
@@ -75,10 +139,8 @@ http://www.templatemo.com/tm-484-ocean
                                 <div class="carousel-item">
                                     <div class="carousel-content">
                                         <div>
-                                            <h2 class="tm-carousel-item-title">Quisque vel nisi pharetra</h2>
-                                            <p class="tm-carousel-item-text">Praesent ultrices a ante at efficitur. Aliquam eu lacinia nunc. Phasellus lacinia feugiat accumsan.<br>
-                                            Nulla tempor vel est sit amet tincidunt. Nullam eget lectus ut felis aliquam<br>
-                                            laoreet eget eu dui. Curabitur in imperdiet lorem.</p>
+                                            <h2 class="tm-carousel-item-title">Stop Perburuan Liar</h2>
+                                            <p class="tm-carousel-item-text">Jangan biarkan hewan langka hanya menjadi cerita dimasa depan.</p>
                                         </div>
                                     </div>                                
                                 </div>
@@ -86,10 +148,8 @@ http://www.templatemo.com/tm-484-ocean
                                 <div class="carousel-item">
                                     <div class="carousel-content">
                                         <div>
-                                            <h2 class="tm-carousel-item-title">Pellentesque id sem</h2>
-                                            <p class="tm-carousel-item-text">Praesent ultrices a ante at efficitur. Aliquam eu lacinia nunc. Phasellus lacinia feugiat accumsan.<br>
-                                            Nulla tempor vel est sit amet tincidunt. Nullam eget lectus ut felis aliquam<br>
-                                            laoreet eget eu dui. Curabitur in imperdiet lorem.</p>
+                                            <h2 class="tm-carousel-item-title">Manusia dan Binatang</h2>
+                                            <p class="tm-carousel-item-text">Dalam keadaan terbaik, Manusia binatang yang paling mulia; Dipisahkan dari hukum dan keadilan, Manusia adalah yang terburuk <br>- Aristoteles</p>
                                         </div>
                                     </div>                                
                                 </div>
@@ -106,20 +166,15 @@ http://www.templatemo.com/tm-484-ocean
                 <section class="tm-2-col-img-text tm-2-col-img-lg-right">
                     
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 tm-2-col-img">                    
-                        <img src="<?= base_url; ?>/templatemo/img/Koala.jpg" alt="Image" class="img-fluid">
+                        <img src="<?= base_url; ?>/dist/img/orangutan.jpg" alt="Image" class="img-fluid">
                     </div>
 
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 tm-2-col-text">
-                        <h2 class="tm-2-col-text-title">Integer sed dictum lectus</h2>
+                        <h2 class="tm-2-col-text-title">Orangutan</h2>
                         <p class="tm-2-col-text-description">
                             
-                            Aliquam augue libero, convallis in vulputate vel, sodales sed
-                            purus. In non velit in eros bibendum pretium quis eu
-                            sapien. Donec sapien risus, hendrerit ut metus dignissim,
-                            pellentesque congue erat. Quisque tempor odio libero, 
-                            non auctor odio suscipit eget.
+                            Indonesia memiliki tiga spesies orangutan, yakni orangutan Sumatera (Pongo abelii), orangutan Kalimantan (Pongo pygmaeus) dan orangutan Tapanuli (Pongo tapanuliensis). Ketiganya berstatus Kritis (Critically Endangered/CR) berdasarkan daftar merah IUCN. Ini diakibatkan karena hilangnya hutan yang menjadi habitat primata satu ini, padahal orangutan memiliki peran penting untuk menjaga regenerasi hutan, yakni sebagai penebar biji.
                         </p>
-                        <a href="#" class="tm-bordered-btn">Read More</a>
                     </div>
                     
                 </section>
@@ -131,19 +186,14 @@ http://www.templatemo.com/tm-484-ocean
                 <section class="tm-2-col-img-text tm-2-col-img-lg-left">
                     
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 tm-2-col-img">                    
-                        <img src="<?= base_url; ?>/templatemo/img/Penguins.jpg" alt="Image" class="img-fluid">
+                        <img src="<?= base_url; ?>/dist/img/cendrawasih.jpg" alt="Image" class="img-fluid">
                     </div>
 
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 tm-2-col-text">
-                        <h2 class="tm-2-col-text-title">Integer sed dictum lectus</h2>
+                        <h2 class="tm-2-col-text-title">Cendrawasih</h2>
                         <p class="tm-2-col-text-description">
-                            Aliquam augue libero, convallis in vulputate vel, sodales sed
-                            purus. In non velit in eros bibendum pretium quis eu
-                            sapien. Donec sapien risus, hendrerit ut metus dignissim,
-                            pellentesque congue erat. Quisque tempor odio libero, 
-                            non auctor odio suscipit eget.
+                            Burung cenderawasih diberi julukan burung dari surga berkat kecantikannya. Diduga terdapat 30 jenis Cenderawasih yang ada di Indonesia dan 28 jenis di antaranya dapat ditemukan di Papua. Semua spesies tersebut berstatus dilindungi dalam UU Nomor 5 Tahun 1990 tentang Konservasi Sumber Daya Alam Hayati dan Ekosistemnya.
                         </p>
-                        <a href="#" class="tm-bordered-btn">Read More</a>
                     </div>
                     
                 </section>
@@ -154,55 +204,13 @@ http://www.templatemo.com/tm-484-ocean
             <div class="row tm-section tm-blue-bg-row">
                 
                 <section>
-
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-xs-center">
-                            <h2 class="tm-section-title">About our company</h2>
+                            <h2 class="tm-section-title">Tentang SatwaKu</h2>
+                            <img class="profile-user-img img-fluid img-circle" src="<?= base_url; ?>/dist/img/logo.jpg" style="width: 130px; height: 130px;display: block; margin-left: auto; margin-right: auto;"><br>
                             <p class="tm-section-subtitle">
-                            Phasellus lacinia feugiat accumsan. Nulla tempor vel est sit amet tincidunt. 
-                            Nullam eget lectus ut felis aliquam.
+                            SatwaKu adalah sebuah website projek dari mata kuliah Pemrograman Berbasis Web yang bertemakan dari SDG's "Keanekaragaman Hayati", Website kami berisi tentang satwa-satwa liar yang dilindungi di Indonesia yang dimulai pada tahun 2021 oleh <br> Masyhuri Farhan dan Arif Rohman Afandi.
                             </p>    
                         </div>
-                        
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                            
-                            <div class="tm-icon-text-boxes-container">
-                            
-                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
-                                    <div class="tm-icon-text-box">
-                                        <i class="fa fa-5x fa-mixcloud"></i>
-                                        <h3 class="tm-icon-text-box-title">Vestinbulum ornare</h3>
-                                        <p class="tm-icon-text-box-description">Nullam eget lectus ut felis aliquam laoreet eget eu dui. Curabitur in imperdiet.</p>
-                                    </div>
-                                </div>
-
-                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
-                                    <div class="tm-icon-text-box">
-                                        <i class="fa fa-5x fa-line-chart"></i>
-                                        <h3 class="tm-icon-text-box-title">Vestinbulum ornare</h3>
-                                        <p class="tm-icon-text-box-description">Nullam eget lectus ut felis aliquam laoreet eget eu dui. Curabitur in imperdiet.</p>
-                                    </div>
-                                </div>
-
-                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
-                                    <div class="tm-icon-text-box">
-                                        <i class="fa fa-5x fa-group"></i>
-                                        <h3 class="tm-icon-text-box-title">Vestinbulum ornare</h3>
-                                        <p class="tm-icon-text-box-description">Nullam eget lectus ut felis aliquam laoreet eget eu dui. Curabitur in imperdiet.</p>
-                                    </div>
-                                </div>
-
-                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
-                                    <div class="tm-icon-text-box">
-                                        <i class="fa fa-5x fa-globe"></i>
-                                        <h3 class="tm-icon-text-box-title">Vestinbulum ornare</h3>
-                                        <p class="tm-icon-text-box-description">Nullam eget lectus ut felis aliquam laoreet eget eu dui. Curabitur in imperdiet.</p>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                        </div>
-
                 </section>
 
             </div> <!-- row -->
@@ -213,29 +221,8 @@ http://www.templatemo.com/tm-484-ocean
                     
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-xs-center">
                         
-                        <h2 class="tm-section-title">Keep in touch</h2>
-                        <p class="tm-section-subtitle">Phasellus lacinia feugiat accumsan. Nulla tempor vel est sit amet tincidunt. Nullam eget lectus ut felis aliquam.</p>
-
+                        <h2 class="tm-section-title">Kontak</h2>
                     </div>
-
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-7 col-xl-7">
-                        <form action="index.html" method="post" class="tm-contact-form">                                
-                            <div class="form-group col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 tm-form-group-left">
-                                <input type="text" id="contact_name" name="contact_name" class="form-control" placeholder="Name"  required/>
-                            </div>
-                            <div class="form-group col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 tm-form-group-right">
-                                <input type="email" id="contact_email" name="contact_email" class="form-control" placeholder="Email"  required/>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" id="contact_subject" name="contact_subject" class="form-control" placeholder="Subject"  required/>
-                            </div>
-                            <div class="form-group">
-                                <textarea id="contact_message" name="contact_message" class="form-control" rows="6" placeholder="Message" required></textarea>
-                            </div>
-                        
-                            <button type="submit" class="btn tm-bordered-btn pull-xs-right">Submit</button>                          
-                        </form>   
-                    </div> <!-- col -->
                     
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 tm-contact-right">
                         <h3 class="tm-contact-title">Alamat Kami</h3>
@@ -244,10 +231,7 @@ http://www.templatemo.com/tm-484-ocean
                         </p>
                         <p class="tm-contact-info"> 
                             Email: <a href="matrovoska@gmail.com">satwaku@guardian.com</a><br>
-                            
-                        </p>
-                        <p class="tm-contact-info">
-                            Phone: <a href="tel:+62987898789">+62-696-2947</a>
+                            Phone: <a href="tel:+62987898789">+62987898789</a>
                         </p>
                         <div class="tm-social-icons-container">
                             <a href="#" class="tm-social-icon-link"><i class="fa fa-facebook tm-social-icon"></i></a>

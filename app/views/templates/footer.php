@@ -1,10 +1,12 @@
 
   <footer class="main-footer">
     <div class="float-right d-none d-sm-block">
-      <b>Versi</b> 1.0
+      <b>Versi</b> 1.0 CBT
     </div>
-    <strong>Copyright &copy;2021 Satwa Ku All Right
-    reserved.
+    <div style="margin-right: auto;margin-left: auto;text-align: center;">
+	    <strong >Copyright &copy;2021 Satwa Ku All Right
+	    reserved.</strong>
+	</div>
   </footer>
 
 </div>
