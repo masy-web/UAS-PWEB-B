@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 16, 2021 at 06:01 AM
+-- Generation Time: Jun 18, 2021 at 10:27 AM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 7.4.15
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `db_satwa`
+-- Database: `db_satwa1`
 --
 
 -- --------------------------------------------------------
@@ -42,9 +42,16 @@ CREATE TABLE `hewan` (
 --
 
 INSERT INTO `hewan` (`id`, `nama_hewan`, `nama_latin`, `habitat`, `status`, `jenis_id`, `jumlah`) VALUES
-(1, 'Anoa', 'Anoa Anone', 'Padang Rumput', 'Endagengered', 1, 1000),
-(2, 'Babi Rusa', 'Babirusanensis', 'Hutan Hujan', 'Punah', 1, 100),
-(7, 'Harimau Sunda', 'Sundanensis Pantheras', 'Hutan Bakau', 'Dangered', 1, 150);
+(1, 'Anoa', 'Bubalus sp.', 'Hutan Hujan', 'Endagengered', 1, 1000),
+(2, 'Babi Rusa', 'Babyrousa', 'Rawa', 'Critically Endangered', 1, 100),
+(7, 'Harimau Jawa', 'Panthera tigris sondaica', 'Hutan dataran rendah', 'Punah', 1, 0),
+(10, 'Komodo', 'Varanus komodoensis', 'Tanah tandus', 'Dilindungi', 3, 5700),
+(11, 'Burung Jalak Bali', 'Leucopsar rothschildi', 'Hutan mangrove', 'Critically Endangered', 2, 303),
+(12, 'Kucing Merah', 'Catopuma badia', 'dataran rendah', 'Vulnerable', 1, 2500),
+(13, 'Kucing Bakau', 'Prionailurus viverrinus', 'Hutan Bakau', 'Vulnerable', 1, 2000),
+(14, 'Elang Flores', 'Nisaetus flores', 'Hutan dataran rendah', 'Critically Endangered', 2, 240),
+(15, 'Kura-kura Leher Ular ', 'Chelodina mccordi', 'Danau peto', 'Critically Endangered', 3, 26),
+(16, 'Orangutan', 'Pongo', 'Hutan hujan tropis dan hutan tanah gambut', 'Critically Endangered', 1, 35000);
 
 -- --------------------------------------------------------
 
@@ -86,9 +93,8 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `nama`, `username`, `password`) VALUES
-(1, 'Herzi', 'admin', '21232f297a57a5a743894a0e4a801fc3'),
 (2, 'Arif Rahman', 'arif', '202cb962ac59075b964b07152d234b70'),
-(3, 'Dandy Wiraditya Putra', 'branditya', '202cb962ac59075b964b07152d234b70');
+(4, 'Masyhuri Farhan', 'masyhuri', '94c36ae6c664614dd5f150cfdc91b8d7');
 
 --
 -- Indexes for dumped tables
@@ -121,19 +127,19 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `hewan`
 --
 ALTER TABLE `hewan`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table `jenis`
 --
 ALTER TABLE `jenis`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=63;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=65;
 
 --
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- Constraints for dumped tables
