@@ -5,7 +5,7 @@ class Home extends Controller {
 	{	
 		if($_SESSION['session_login'] != 'sudah_login') {
 			Flasher::setMessage('Login','Tidak ditemukan.','danger');
-			header('location: '. base_url . '/login');
+			header('location: '. base_url . '/tampil');
 			exit;
 		}
 	} 

@@ -30,7 +30,7 @@
   <!-- /.login-logo -->
   <div class="card ">
     <div class="card-body login-card-body">
-      <img class="profile-img " src="dist/img/logo.jpg" style="width: 70px; height: 70px;display: block; margin-left: auto; margin-right: auto;">
+      <img class="profile-img "> <!-- src="dist/img/logo.jpg" style="width: 70px; height: 70px;display: block; margin-left: auto; margin-right: auto;"> -->
       <p class="login-box-msg">Silahkan login terlebih dahulu.</p>
 
       <form action="<?= base_url; ?>/login/prosesLogin" method="post">
